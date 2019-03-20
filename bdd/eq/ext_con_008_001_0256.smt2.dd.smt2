@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun x0 () (_ BitVec 256))
+(assert (not (= ((_ extract 191 128) x0) ((_ extract 127 64) x0))))
+(check-sat)
+(exit)
