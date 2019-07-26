@@ -1,8 +1,0 @@
-(set-logic QF_BV)
-(declare-fun x0 () (_ BitVec 32))
-(declare-fun x1 () (_ BitVec 8))
-(declare-fun x2 () (_ BitVec 32))
-(declare-fun x3 () (_ BitVec 32))
-(assert (let ((?v_42 (_ bv0 32)) (?v_22 ((_ zero_extend 24) x1))) (let ((?v_7 (bvadd (bvadd (_ bv0 32) (_ bv4268253 32)) (_ bv0 32)))) (let ((?v_10 (bvadd ?v_7 (_ bv6 32)))) (let ((?v_12 (bvadd (bvadd ?v_10 (_ bv0 32)) (_ bv2 32)))) (let ((?v_13 (bvadd ?v_12 x2))) (let ((?v_15 (bvadd ?v_13 (_ bv6 32)))) (let ((?v_16 (bvadd ?v_15 (_ bv0 32)))) (let ((?v_23 (bvadd ?v_16 (_ bv2 32)))) (let ((?v_9 (bvadd (_ bv0 32) x2))) (and true (bvsle (_ bv1040 32) (bvsub (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd (bvadd ?v_9 (_ bv7 32)) x0) (_ bv3 32)) (_ bv0 32)) (_ bv0 32)) (_ bv0 32)) (_ bv0 32)) (_ bv0 32)) (_ bv0 32)) (_ bv0 32)) (_ bv0 32)) ?v_22) (_ bv4268072 32))) true (= x0 (_ bv1 32)) true (bvule (bvsub (bvadd ?v_23 x3) (_ bv4268232 32)) (_ bv846 32)) (bvule ?v_23 (_ bv4269078 32)) true)))))))))))
-(check-sat)
-(exit)

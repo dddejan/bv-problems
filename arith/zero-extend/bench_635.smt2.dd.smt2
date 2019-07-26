@@ -1,8 +1,0 @@
-(set-logic QF_BV)
-(declare-fun x0 () Bool)
-(declare-fun x1 () (_ BitVec 16))
-(declare-fun x2 () (_ BitVec 32))
-(declare-fun x3 () (_ BitVec 32))
-(assert (let ( (?v_193 ((_ zero_extend 16) x1))) (let ( (?v_194 (bvadd ?v_193 (_ bv0 32)))) (and true (= x2 ?v_194) (= (bvadd (_ bv0 32) x2) x3) true (not (= ?v_194 x3)) true x0 true))))
-(check-sat)
-(exit)
