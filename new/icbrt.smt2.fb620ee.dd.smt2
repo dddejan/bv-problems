@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun _substvar_497_ () (_ BitVec 32))
+(declare-fun _substvar_495_ () (_ BitVec 32))
+(assert (not (= (bvnot (bvor (bvnot (bvnot ((_ extract 31 31) _substvar_497_))) (bvor (ite (= _substvar_497_ (_ bv0 32)) (_ bv1 1) (_ bv0 1)) (ite (bvult _substvar_497_ (bvmul (bvmul _substvar_495_ _substvar_495_) _substvar_495_)) (_ bv1 1) (_ bv0 1))))) (_ bv0 1))))
+(check-sat)
+(exit)

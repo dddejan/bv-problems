@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun _substvar_723_ () (_ BitVec 8))
+(declare-fun _substvar_872_ () (_ BitVec 32))
+(declare-fun _substvar_837_ () (_ BitVec 32))
+(declare-fun _substvar_758_ () (_ BitVec 32))
+(assert (let ((?v_3 ((_ zero_extend 24) (_ bv8 8)))) (let ( (?v_2 ((_ zero_extend 24) (_ bv15 8)))) (let ( (?v_16 ((_ zero_extend 24) _substvar_723_))) (let ((?v_19 (bvadd (bvmul (bvsub ?v_16 (_ bv48 32)) ?v_2) (bvsub (bvashr _substvar_837_ ?v_3) (_ bv48 32))))) (let ((?v_15 (bvadd (_ bv0 32) (bvsub (_ bv0 32) (_ bv48 32))))) (and true true true true true true true true true true true true true true (= _substvar_837_ _substvar_758_) true true true true true true true true true true true true true true true true (= _substvar_872_ ?v_15) true true (= ?v_19 _substvar_872_) true true (= (_ bv0 32) ?v_19) true true true true true true true true true true true true true true true true true true true true true true true true true true true)))))))
+(check-sat)
+(exit)

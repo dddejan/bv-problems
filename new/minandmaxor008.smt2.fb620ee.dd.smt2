@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun _substvar_819_ () (_ BitVec 8))
+(declare-fun _substvar_815_ () (_ BitVec 8))
+(declare-fun _substvar_762_ () (_ BitVec 1))
+(declare-fun _substvar_1101_ () Bool)
+(assert (let ( (?v_0 (bvnot _substvar_815_)) (?v_4 (bvnot _substvar_819_))) (let ((?v_19 _substvar_815_)) (let ((?v_23 (ite _substvar_1101_ (_ bv0 8) _substvar_819_))) (let ((?v_35 ?v_19)) (let ((?v_39 ?v_23)) (let ((?v_50 ?v_35)) (let ((?v_54 ?v_39)) (let ((?v_65 ?v_50)) (let ((?v_69 ?v_54)) (let ((?v_80 ?v_65)) (let ((?v_84 ?v_69)) (let ((?v_95 ?v_80)) (let ((?v_100 ?v_84)) (let ((?v_98 ?v_95)) (let ((?v_111 ?v_100)) (let ( (?v_123 (bvnot (_ bv0 8)))) (let ((?v_124 (ite _substvar_1101_ (_ bv0 8) ?v_0))) (let ((?v_128 (ite _substvar_1101_ ?v_123 ?v_4))) (let ((?v_138 ?v_124)) (let ((?v_140 ?v_128)) (let ((?v_149 ?v_138)) (let ((?v_151 ?v_140)) (let ((?v_160 ?v_149)) (let ((?v_162 ?v_151)) (let ((?v_171 ?v_160)) (let ((?v_173 ?v_162)) (let ((?v_182 ?v_171)) (let ((?v_184 ?v_173)) (let ((?v_189 ?v_182)) (let ((?v_198 ?v_184)) (not (= (bvand _substvar_762_ (bvnot (ite (= (bvand ?v_98 ?v_111) (bvand (bvnot ?v_189) (bvnot ?v_198))) (_ bv1 1) (_ bv0 1)))) (_ bv0 1))))))))))))))))))))))))))))))))))
+(check-sat)
+(exit)

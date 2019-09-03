@@ -1,0 +1,6 @@
+(set-logic QF_BV)
+(declare-fun _substvar_74_ () (_ BitVec 1))
+(declare-fun _substvar_81_ () (_ BitVec 32))
+(assert (let ((?x10 (bvmul _substvar_81_ _substvar_81_))) (let ((?x12 (bvadd ?x10 (_ bv0 32)))) (let (($x22 (= ?x12 (_ bv0 32)))) (let (($x24 $x22)) (let (($x26 $x24)) (let ((?x29 (ite $x26 _substvar_74_ (_ bv0 1)))) (let (($x30 (= ?x29 (_ bv1 1)))) (let (($x31 (not $x30))) (let (($x32 (not $x31))) $x32))))))))))
+(check-sat)
+(exit)

@@ -1,0 +1,5 @@
+(set-logic QF_BV)
+(declare-fun _substvar_23_ () (_ BitVec 1024))
+(assert (and true true true (or false false (not (= ((_ extract 703 640) _substvar_23_) ((_ extract 639 576) _substvar_23_))) false) true))
+(check-sat)
+(exit)

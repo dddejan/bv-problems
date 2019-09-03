@@ -1,0 +1,8 @@
+(set-logic QF_BV)
+(declare-fun _substvar_1088_ () (_ BitVec 32))
+(declare-fun _substvar_1092_ () (_ BitVec 32))
+(declare-fun _substvar_1174_ () (_ BitVec 8))
+(declare-fun _substvar_1134_ () (_ BitVec 32))
+(assert (let ((?v_50 (bvor (bvadd _substvar_1092_ _substvar_1134_) ((_ zero_extend 24) _substvar_1174_)))) (and true true (bvult _substvar_1088_ ?v_50) true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true (bvult ?v_50 _substvar_1088_) true true true true true true true)))
+(check-sat)
+(exit)

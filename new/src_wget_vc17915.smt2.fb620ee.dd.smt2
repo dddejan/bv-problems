@@ -1,0 +1,7 @@
+(set-logic QF_BV)
+(declare-fun _substvar_208_ () (_ BitVec 64))
+(declare-fun _substvar_211_ () (_ BitVec 64))
+(assert (= false (bvsle _substvar_208_ ((_ extract 63 0) (_ bv3000 64)))))
+(assert (= (_ bv0 64) (bvsdiv _substvar_208_ _substvar_211_)))
+(check-sat)
+(exit)
